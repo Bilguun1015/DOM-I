@@ -57,6 +57,16 @@ const navA = document.querySelectorAll('a');
   navA[4].textContent = 'About';
   navA[5].textContent = 'Contact';
 
+  navA.forEach(colorChange => colorChange.style.color = 'green');
+
+const navArray = ['User Login', 'Password Change'];
+navArray.forEach(currentValue =>{
+  const listNavs = document.createElement ('a');
+  listNavs.textContent = currentValue;
+  navigation.append(listNavs);
+})
+
+
 const h1Header = document.querySelector('h1');
   h1Header.textContent = `DOM IS AWESOME`;
 
