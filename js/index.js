@@ -59,10 +59,19 @@ const navA = document.querySelectorAll('a');
 
   navA.forEach(colorChange => colorChange.style.color = 'green');
 
+  // const newATag = document.createElement('a');
+  // newATag.textContent = 'User Login';
+  // newATag.href = '#';
+  // newATag.style.color = 'green';
+  // navigation.append(newATag);
+
+
 const navArray = ['User Login', 'Password Change'];
 navArray.forEach(currentValue =>{
   const listNavs = document.createElement ('a');
+  listNavs.href = '#';
   listNavs.textContent = currentValue;
+  listNavs.style.color = 'green';
   navigation.append(listNavs);
 })
 
