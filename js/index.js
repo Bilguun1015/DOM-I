@@ -41,14 +41,12 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
   logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
-const header = document.querySelector('header')
-
 const navigation = document.querySelector('nav');
 
 const navA = document.querySelectorAll('a');
 // const navArray = ['Services', 'Products', 'Vision', 'Features', 'About', 'Contact'];
 // navArray.forEach(everyItem => {
-//   navA.textContent = everyItem;
+  
 // });
   navA[0].textContent = 'Services';
   navA[1].textContent = 'Products';
@@ -81,6 +79,10 @@ const h1Header = document.querySelector('h1');
 
 const buttonHeader = document.querySelector('button');
   buttonHeader.textContent = 'Get Started';
+
+buttonHeader.addEventListener('click',(event)=>{
+  alert('You clicked the button!');
+})
 
 const headerImg = document.querySelector('#cta-img');
   headerImg.src = 'img/header-img.png';
